@@ -1,0 +1,24 @@
+[[redirects]]
+  from = "/index2.html"
+  to = "/landing.html"
+  status = 301
+
+[[redirects]]
+  from = "/index1.html"
+  to = "/contact.html"
+  status = 301
+
+[[redirects]]
+  from = "/index3.html"
+  to = "/work.html"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
